@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>arrays</title>
+</head>
+<body>
+  <script>
+   let a=[1,2,3,4]
+   console.log(a);
+   console.log(a[3]);
+  console.log(a.length);
+  a[4]=6;
+  console.log(a);
+  console.log(a[2]=96);
+  console.log(a);
+
+
+  let num=[1,2,3,4,5,6,7];
+  let b=num.toString();
+  console.log(b);
+
+  let c=num.join("_");
+  console.log(c);
+
+  let r=num.pop()
+  console.log('popping the last element '+r);
+
+  num.push(56);
+  console.log(num);
+
+
+
+  let s=num.shift();
+  console.log(s);// remove element from start;
+  console.log(num);
+
+  let n1=[1,2,3,4,5,6,7,8,9];
+  console.log('length of array '+num.length);
+  delete num[0];
+  console.log(num);
+  console.log('length of array '+num.length);
+  // after using delete length will remain same
+
+  let newaraay=num.concat(n1);
+  console.log(newaraay);
+
+   let num11=[542,76,233,7,435,97,235,56,132,87];
+   console.log(num11.sort());
+   // modify the original array
+   console.log(num11);
+   //dosent do the correct sorting
+     
+     let compare=(a,b)=>{
+      return a-b;
+     }
+
+    let num12=[34,67,23,90,1,7,2,80,37];
+    num12.sort(compare);
+    console.log(num12);
+    console.log(num12.reverse());
+
+    num12.splice(2,3,5633,8968,45646); 
+    console.log(deletedvalues);
+    console.log(num12);
+
+
+    
+
+  </script>
+</body>
+</html>

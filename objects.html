@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // const product={
+    //  name:'socks', price:1050
+    // };
+    
+    // console.log(product);
+    // console.log(typeof product);
+    // console.log(product.name);
+    // console.log(product.price);
+
+    // product.name='cotton socks'
+    // console.log(product);
+
+    // product.newProperty=true;
+    // console.log(product);
+
+    // delete product.newProperty;
+    // console.log(product);
+
+    /*
+    const product2={ //creation of an object 
+      name: 'shirt',
+      ['delivery-time']:'1 day',
+      rating:{
+        stars:4.5,
+        count:87, 
+      },
+       fun:function function1(){ //creation of an fucntion in an obj
+        console.log('function inside the object')
+       }
+
+    }; //accesssing object
+    console.log(product2);
+    console.log(product2.name);
+    console.log(product2['name']);
+    console.log(product2['delivery-time']);
+    
+    console.log(product2.rating.count)
+    product2.fun();
+
+
+    console.log(typeof console.log)
+
+
+    //converting javascript obj into json format using stringify
+    console.log(JSON.stringify(product2));
+
+     // converting json string into javascript obj
+     const jsonstring=JSON.stringify(product2);
+     console.log(JSON.parse(jsonstring)); 
+    */
+
+     const object1={
+       message: 'hello'
+     };
+     const object2=object1;
+
+
+     object1.message='good job';
+     console.log(object1);
+
+     console.log(object2);
+
+
+     const object3={
+      message:'good job'
+     };
+
+     console.log(object3 === object1 );
+
+     /*objects are store in computer memory with given references  name as objects1,objects2 and objects3 we can change the value of an objects even though we have given data type as const for an object */
+      
+     const object4={
+      message: 'good job',
+      price: 799
+     };
+
+    //  const message=object4.message;
+     const{message,price}=object4; // this method is called destructuring this line do exactly samthing as obove line does
+      console.log(message);
+      console.log(price);
+
+
+      //short hand propertry
+
+      const object5={
+        // message:message
+        message,  //this line do same work as obove line
+        //  method:function function1(){
+        //   console.log('method');
+        // }
+        method(){
+          console.log('method'); // this line do same work as obove
+        }
+      };
+        // this line is storing the value present  in message in new variable message
+
+
+      cosnole.log(object5);
+       object5.method
+  </script>
+</body>
+</html>

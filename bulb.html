@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .bulb{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50px;
+    margin-left: 6px;
+    border: 2px solid black;
+  }
+  #butt{
+    width: 90px;
+    height: 50px;
+    background-color: black;
+    border-radius: 0px 0px 20px 20px;
+    margin-left: 38px;
+  }
+
+
+</style>
+<body>
+
+  <div id="bulb" class="bulb"></div>
+  <div id="butt"></div>
+
+  <br><br>
+  <button id="on" >on</button>&nbsp;
+  <button id="off">off</button>
+  
+</body>
+<script>
+
+  document.getElementById('on').addEventListener('click',()=>{
+   document.getElementById('bulb').style.backgroundColor="yellow"
+
+  })
+
+  document.getElementById('off').addEventListener('click',()=>{
+   document.getElementById('bulb').style.backgroundColor="white"
+
+  })
+
+
+</script>
+
+</html>
